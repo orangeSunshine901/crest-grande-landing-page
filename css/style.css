@@ -16,6 +16,11 @@ pink: #E674A9
 light-blue: #19A0C0
 black: #0C0C0C
 
+font-size: 
+
+17px - 1.0625rem
+21px - 1.3125rem
+
 **/
 :root{
     --miami-red: #DA0E4F;
@@ -69,7 +74,7 @@ header{
     display: flex;
     align-items: flex-end;
     list-style-type: none;
-    font-size: 0.625rem;
+    font-size: clamp(0.525rem, 0.60rem, 0.625rem);
 }
 
 .element1,
@@ -132,6 +137,68 @@ header{
     margin-left: 0.8em;
     margin-top: 0.35em;
 }
-/** Mobile **/
+/** Mobile Hero Section**/
 
+.mobile-hero{
+    background-image: url(../images/hero-img-mob.jpg);
+    min-height: 35rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+.sobha-logo-mobile{
+    position: inherit;
+    text-align: center;
+    padding-top: 35rem;
+}
+
+.tagline{
+    position: relative;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.tagline img{
+    width: max(80%)
+}
+
+/** Mobile Hero Section**/
+.mobile-hero-text{
+    margin: 3.3rem 1.2rem;
+}
+.mobile-hero-heading img{
+    width: max(45%);
+    padding-bottom: 1.3rem;
+}
+.mobile-hero-subheading{
+    font-size: max(1.0625rem);
+    padding-bottom: 1.3rem;
+}
+
+.mobile-cta{
+    border: none;
+    background-color: transparent;
+    color: var(--miami-pink);
+    font-size: clamp(1.1rem,1.2rem,1.3125rem)
+}
+
+
+.mobile-cta::before{
+    content: url("../images/cta-arrow.svg");
+    width: max(100%);
+    height: 100%;
+    position: absolute;
+    padding-right: 100vw;
+    padding-top: 15px;
+    opacity: 0;
+    animation: example 900ms ease-in-out infinite alternate;
+}
+
+@keyframes example {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+/** Mobile Hero Heading **/
 
