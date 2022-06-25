@@ -1,0 +1,137 @@
+/**
+
+font-weight: 
+Thin 100
+Light 300
+Regular 400
+SemiBold 600
+Bold 700
+
+colors:
+white: #FFFFFF
+navy-blue: #0C0F1B
+grey: #7B7F83
+red: #DA0E4F
+pink: #E674A9
+light-blue: #19A0C0
+black: #0C0C0C
+
+**/
+:root{
+    --miami-red: #DA0E4F;
+    --miami-blue: #19A0C0;
+    --miami-pink: #E674A9;
+    --spades-blue: #0C0F1B;
+    --spades-black: #0C0C0C;
+}
+
+*, ::before, ::after{
+    /* border: 0.1rem solid red; */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    background-color: var(--spades-blue);
+    color: white;
+}
+/** Mobile **/
+header{
+    padding: 0.8rem 0.6rem;
+}
+
+
+.nav-bar{
+    display: grid;
+    width: 100%;
+    min-width: 60%;
+    grid-template-columns: 1.2rem 2rem;
+    column-gap: 0.6rem;
+}
+
+.spades-logo{
+    padding-left: 0.4rem;
+}
+
+.nav-element-container{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    min-width: 80%;
+    display: flex;
+    align-self: end;
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+
+.nav-list{
+    display: flex;
+    align-items: flex-end;
+    list-style-type: none;
+    font-size: 0.625rem;
+}
+
+.element1,
+.element2,
+.element3{
+    display: inline;
+    min-width: 4.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.8rem;
+}
+
+.element1::before{
+    content: "";
+    position: absolute;
+    min-width: 3.5rem;
+    min-height: 0.03rem;
+    background: white;
+    margin-top: 1.5em;
+}
+.element2::before{
+    content: "";
+    position: absolute;
+    min-width: 4.5rem;
+    min-height: 0.03rem;
+    background: white;
+    margin-top: 1.5em;
+}
+.element3::before{
+    content: "";
+    position: absolute;
+    min-width: 4.8rem;
+    min-height: 0.03rem;
+    background: white;
+    margin-top: 1.5em;
+}
+.element1::after{
+    content: "";
+    position: absolute;
+    min-width: 0.4rem;
+    min-height: 0.4rem;
+    background: white;
+    margin-left: 0.8em;
+    margin-top: 0.35em;
+}
+.element2::after{
+    content: "";
+    position: absolute;
+    min-width: 0.4rem;
+    min-height: 0.4rem;
+    background: white;
+    margin-left: 0.8em;
+    margin-top: 0.35em;
+}
+.element3::after{
+    content: "";
+    position: absolute;
+    min-width: 0.4rem;
+    min-height: 0.4rem;
+    background: white;
+    margin-left: 0.8em;
+    margin-top: 0.35em;
+}
+/** Mobile **/
+
+
