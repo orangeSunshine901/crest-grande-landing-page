@@ -15,9 +15,12 @@ red: #DA0E4F
 pink: #E674A9
 light-blue: #19A0C0
 black: #0C0C0C
+grey: #E4E4E4
 
 font-size: 
 13px - 0.8125rem
+15px - 0.9375 rem
+16px- 1rem
 17px - 1.0625rem
 21px - 1.3125rem
 24px - 1.5rem
@@ -30,6 +33,7 @@ font-size:
     --miami-pink: #E674A9;
     --spades-blue: #0C0F1B;
     --spades-black: #0C0C0C;
+    --spades-white: #E4E4E4;
 }
 
 *, ::before, ::after{
@@ -214,7 +218,7 @@ header{
     color: var(--spades-black);
     padding: 1.2rem;
     font-size: 1.5rem;
-    gap: 40px;
+    gap: 10px;
 }
 
 .price{
@@ -312,3 +316,107 @@ header{
 }
 /**Mobile**/
 /**Property Details Section **/
+
+/** Miami Inspired Style Section **/
+/** Mobile **/
+.miami-style{
+    min-height: 70vh;
+    padding-block: 3rem;
+}
+
+.miami-heading{
+    text-align: center;
+}
+
+.miami-heading img{
+    width: 70%;
+    position: relative;
+    top: 1.4rem;
+}
+
+.miami-img{
+    text-align: center;
+}
+
+.miami-img img{
+    width: 22rem;
+}
+
+.miami-text{
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+}
+/** Mobile **/
+/** Miami Inspired Style Section **/
+
+/** Amenities Section **/
+/** Mobile **/
+.amenities-section{
+    padding-bottom: 3rem;
+}
+.amenities-heading{
+    text-align: center;
+}
+
+.amenities-heading img{
+    width: max(80%);
+    padding-bottom: 2rem;
+}
+
+.amenities-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+}
+
+.amenities-list div{
+    text-align: center;
+    min-width: 40%;
+}
+
+.amenities-list p{
+    font-size: 0.9375rem;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.amenities{
+    text-transform: uppercase;
+    font-size: 1.0625rem;
+}
+/** Mobile **/
+/** Amenities Section **/
+
+/** Location Section **/
+.location-section{
+    background-color: var(--spades-white);
+    color: var(--spades-black);
+    padding-block: 2rem;
+    padding-inline: 1.2rem;
+}
+.location-section h3{
+    text-align: center;
+    font-size: 1.0625rem;
+    font-weight: 300;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+}
+
+.map{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.map img{
+    width: 100%;
+}
+
+.apartment-features h4{
+    text-align: center;
+    font-size: 1.0625rem;
+    font-weight: 300;
+}
+
+
+
