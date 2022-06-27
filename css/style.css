@@ -556,6 +556,11 @@ input[type=tel]:focus{
     border-radius: 0.3rem;
 }
 
+input[type=text], input[type=button] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
 /** Mobile Section**/
 /** Contact Us Section **/
 
