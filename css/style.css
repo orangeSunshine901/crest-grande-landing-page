@@ -40,11 +40,11 @@ font-size:
     /* border: 0.1rem solid red; */
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
     background-color: var(--spades-blue);
     color: white;
 }
@@ -171,7 +171,7 @@ header{
 }
 
 .left-hero-section{
-    padding-inline: 10%;
+    padding-inline: 5%;
     padding-block: 2rem;
 }
 
@@ -196,6 +196,7 @@ header{
 .sobha-logo-desktop{
     transform: rotate(-90deg);
     width: 4%;
+    margin-left: 1%;
 }
 
 .desktop-cta{
@@ -205,6 +206,7 @@ header{
     font-size: 1.5rem;
     font-weight: 100;
     cursor: pointer;
+    font-weight: 400;
 }
 
 .desktop-cta::before{
@@ -379,6 +381,7 @@ header{
         font-size: clamp(1.1rem,1.2rem,1.3125rem);
         cursor: pointer;
         float: left;
+        font-weight: 400;
     }
 
     .mobile-cta::before{
@@ -631,79 +634,186 @@ header{
 /**Property Details Section **/
 
 /** Miami Inspired Style Section **/
-/** Mobile **/
-.miami-style{
-    min-height: 70vh;
-    padding-block: 3rem;
+/** Desktop **/
+
+.miami-text-mobile{
+    display: none;
 }
 
-.miami-heading{
-    text-align: center;
+.miami-style-mobile{
+    display: none;
 }
 
-.miami-heading img{
-    width: 70%;
-    position: relative;
-    top: 1.4rem;
+.miami-style-desktop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 4rem;
+    padding-block: 1.2rem;
 }
+
+
+.miami-text-desktop{
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 200;
+    max-width: 80%;
+}
+
 
 .miami-img{
     text-align: center;
 }
 
 .miami-img img{
-    width: 22rem;
+    max-width: 80%;
+    max-height: 80%;
 }
 
-.miami-text{
-    font-size: 1rem;
-    padding: 1rem 1.2rem;
+/** Desktop **/
+/** Mobile **/
+@media (min-width: 360px) and (max-width: 450px){
+    .miami-text-desktop{
+        display: none;
+    }
+    
+    .miami-style-desktop{
+        padding: 0;
+    }
+
+    .miami-style-mobile{
+        display: block;
+        min-height: 70vh;
+        padding-block: 3rem;
+    }
+
+    .miami-heading{
+        text-align: center;
+    }
+
+    .miami-heading img{
+        width: 70%;
+        position: relative;
+        top: 1.4rem;
+    }
+
+    .miami-img{
+        text-align: center;
+    }
+
+    .miami-img img{
+        width: 22rem;
+    }
+
+    .miami-text-mobile{
+        display: block;
+        font-size: 1rem;
+        padding: 1rem 1.2rem;
+    }
 }
 /** Mobile **/
 /** Miami Inspired Style Section **/
 
 /** Amenities Section **/
-/** Mobile **/
+
+/** Desktop **/
 .amenities-section{
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
+    padding-inline: 4rem;
 }
+
 .amenities-heading{
-    text-align: center;
+    text-align: left;
 }
 
 .amenities-heading img{
-    width: max(80%);
+    width: max(30%);
     padding-bottom: 2rem;
 }
 
 .amenities-list{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     column-gap: 2rem;
-    row-gap: 2rem;
+    row-gap: 0;
     justify-content: center;
 }
 
 .amenities-list div{
     text-align: center;
-    min-width: 40%;
+    width: 100%;
 }
 
 .amenities-list p{
     font-size: 0.9375rem;
     text-align: center;
-    line-height: 1rem;
+    padding-top: 1rem;
+    line-height: 1.3rem;
+}
+
+.amenities-list img{
+    width: 80%;
+    height: 80%;
 }
 
 .amenities{
     text-transform: uppercase;
-    font-size: 1.0625rem;
+    font-size: 1.1rem;
+    letter-spacing: -2px;
+}
+/** Desktop **/
+
+/** Mobile **/
+@media (min-width: 360px) and (max-width: 450px){
+    .amenities-section{
+        padding-inline: 0;
+        padding-bottom: 3rem;
+    }
+    .amenities-heading{
+        text-align: center;
+    }
+
+    .amenities-heading img{
+        width: max(80%);
+        padding-bottom: 2rem;
+    }
+
+    .amenities-list{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        justify-content: center;
+    }
+
+    .amenities-list div{
+        text-align: center;
+        width: 40%;
+    }
+
+    .amenities-list img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .amenities-list p{
+        font-size: 0.9375rem;
+        text-align: center;
+        line-height: 1rem;
+        padding-top: 0;
+    }
+
+    .amenities{
+        text-transform: uppercase;
+        font-size: 1.0625rem;
+        letter-spacing: 0;
+    }
 }
 /** Mobile **/
 /** Amenities Section **/
 
 /** Location Section **/
-/** Mobile **/
+/** Desktop **/
 .location-section{
     background-color: var(--spades-white);
     color: var(--spades-black);
@@ -712,10 +822,10 @@ header{
 }
 .location-section h3{
     text-align: center;
-    font-size: 1.0625rem;
+    font-size: 1.6rem;
     font-weight: 300;
     text-decoration: underline;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .map{
@@ -723,18 +833,18 @@ header{
     padding-bottom: 1rem;
 }
 .map img{
-    width: 100%;
+    width: 60%;
 }
 
 .apartment-features-section h4{
     text-align: center;
-    font-size: 1.0625rem;
+    font-size: 1.4rem;
     font-weight: 300;
 }
 
 .apartment-features{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     padding-inline: 3rem;
     column-gap: 1.5rem;
@@ -744,13 +854,63 @@ header{
 }
 
 .apartment-features img{
-    width: 80%;
+    max-width: 40%;
 }
 
 .apartment-features div{
+    text-align: center;
     width: 40%;
 }
-
+/** Desktop **/
+/** Mobile **/
+@media (min-width: 360px) and (max-width: 450px){
+    .location-section{
+        background-color: var(--spades-white);
+        color: var(--spades-black);
+        padding-block: 2rem;
+        padding-inline: 1.2rem;
+    }
+    .location-section h3{
+        text-align: center;
+        font-size: 1.0625rem;
+        font-weight: 300;
+        text-decoration: underline;
+        padding-bottom: 1rem;
+    }
+    
+    .map{
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .map img{
+        width: 100%;
+    }
+    
+    .apartment-features-section h4{
+        text-align: center;
+        font-size: 1.0625rem;
+        font-weight: 300;
+    }
+    
+    .apartment-features{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-inline: 3rem;
+        column-gap: 1.5rem;
+        row-gap: 0.8rem;
+        align-items: center;
+        padding-block: 1rem;
+    }
+    
+    .apartment-features img{
+        width: 80%;
+    }
+    
+    .apartment-features div{
+        width: 40%;
+    }
+}
 /** Mobile **/
 /** Location Section **/
 
@@ -796,6 +956,7 @@ header{
     font-size: clamp(1.1rem,1.2rem,1.3125rem);
     cursor: pointer;
     float: left;
+    font-weight: 400;
 }
 
 
