@@ -402,6 +402,7 @@ header{
 /** Mobile Section Nav & Hero **/
 
 /**Property Details Section **/
+
 .property-detail-section{
     background-image: url(../images/property-detail-bg-desktop.jpg);
     background-size: cover;
@@ -471,7 +472,7 @@ header{
     text-align: center;
     line-height: 5.4rem;
 }
-
+ 
 .five-years :first-child{
     display: block;
     font-size: 8.8125rem;
@@ -532,7 +533,9 @@ header{
         row-gap: 0.2rem;
         justify-content: flex-start;
     }
-
+    .property-details{
+        text-align: left;
+    }
     .price{
         font-size: 4.5rem;
         font-weight: 700;
@@ -625,6 +628,7 @@ header{
     }
 
     .percentage p{
+        width: auto;
         font-size: 0.7rem;
         font-weight: 400;
         color: var(--miami-red)
