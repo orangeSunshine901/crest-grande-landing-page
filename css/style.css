@@ -79,8 +79,6 @@ header{
 .nav-list{
     display: flex;
     align-items: flex-end;
-    list-style-type: none;
-    font-size: clamp(0.525rem, 0.60rem, 0.625rem);
 }
 
 .element1,
@@ -193,6 +191,7 @@ header{
     color: var(--miami-pink);
     font-size: clamp(1.1rem,1.2rem,1.3125rem);
     cursor: pointer;
+    float: left;
 
 }
 
@@ -492,6 +491,7 @@ header{
     color: var(--miami-pink);
     font-size: clamp(1.1rem,1.2rem,1.3125rem);
     cursor: pointer;
+    float: left;
 }
 
 
