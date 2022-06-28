@@ -86,10 +86,14 @@ header{
 .element1,
 .element2,
 .element3{
-    display: inline;
+    border: none;
+    background-color: transparent;
     min-width: 4.5rem;
     padding-bottom: 0.5rem;
     padding-right: 1.8rem;
+    color: white;
+    font-size: 0.625rem;
+    cursor: pointer;
 }
 
 .element1::before{
@@ -186,9 +190,10 @@ header{
 .mobile-cta{
     border: none;
     background-color: transparent;
-    margin-left: -5px;
     color: var(--miami-pink);
-    font-size: clamp(1.1rem,1.2rem,1.3125rem)
+    font-size: clamp(1.1rem,1.2rem,1.3125rem);
+    cursor: pointer;
+
 }
 
 
@@ -436,30 +441,13 @@ header{
 }
 
 .apartment-features img{
-    width: 90%;
+    width: 80%;
 }
 
 .apartment-features div{
-    min-width: 40%;
+    width: 40%;
 }
 
-.mobile-cta2{
-    border: none;
-    background-color: transparent;
-    margin-left: -5px;
-    color: var(--miami-pink);
-    font-size: clamp(1.1rem,1.2rem,1.3125rem)
-}
-
-
-.mobile-cta2::before{
-    content: url("../images/cta-arrow-lg.svg");
-    min-width: 30%;
-    position: absolute;
-    padding-top: 15px;
-    opacity: 0;
-    animation: example 900ms ease-in-out infinite alternate;
-}
 /** Mobile **/
 /** Location Section **/
 
@@ -496,6 +484,24 @@ header{
     font-size: 1rem;
     font-weight: 100;
     padding-bottom: 1rem;
+}
+
+.mobile-cta2{
+    border: none;
+    background-color: transparent;
+    color: var(--miami-pink);
+    font-size: clamp(1.1rem,1.2rem,1.3125rem);
+    cursor: pointer;
+}
+
+
+.mobile-cta2::before{
+    content: url("../images/cta-arrow-lg.svg");
+    min-width: 30%;
+    position: absolute;
+    padding-top: 15px;
+    opacity: 0;
+    animation: example 900ms ease-in-out infinite alternate;
 }
 /** Mobile **/
 /** Download Section **/
