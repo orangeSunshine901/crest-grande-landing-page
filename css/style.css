@@ -1154,7 +1154,7 @@ input[type=tel]:focus{
     }
 
     .contact-us-section form input{
-        min-width: 90%;
+        width: 100%;
         min-height: 3rem;
         padding-inline: 0.8rem;
         background-color: var(--spades-black);
