@@ -382,6 +382,7 @@ header{
         cursor: pointer;
         float: left;
         font-weight: 400;
+        margin-left: -1%;
     }
 
     .mobile-cta::before{
@@ -391,6 +392,7 @@ header{
         padding-top: 15px;
         opacity: 0;
         animation: example 900ms ease-in-out infinite alternate;
+        float: left;
     }
 
     @keyframes example {
@@ -1040,6 +1042,7 @@ header{
         cursor: pointer;
         float: left;
         font-weight: 400;
+        margin-left: -1%;
     }
 
     .mobile-cta2::before{
@@ -1049,6 +1052,7 @@ header{
         padding-top: 15px;
         opacity: 0;
         animation: example 900ms ease-in-out infinite alternate;
+        float: left;
     }
 }
 /** Mobile **/
