@@ -240,11 +240,45 @@
           </div>
         </div>
         <!--Contact Us Section-->
+    </div>    
         <!--Pop up Modal Form-->
-        <!-- <div>
-          <button class="pop-up-desktop">W</button>
-        </div> -->
+        
+        <button id="popup-button" class="pop-up-desktop" data-modal-target="#modal">
+          <img src="./images/mail-icon.svg" alt="Message icon">
+        </button>
+          <div class="modal" id="modal">
+            <button class="close-button" data-close-button >&times;</button>
+            <div class="modal-header">
+              <div class="modal-heading">Get in Touch</div>
+            </div>
+            <div>
+              <p class="popup-text">We know inspiration doesn’t have a watch,
+              So we’re always available.</p>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="popup-form-fields">
+                    <div>
+                        <label for="fullname"></label>
+                        <input type="text" name="full_name" id="fullname" placeholder="Full Name" required>
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input type="email" name="email_id" id="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="phone"></label>
+                        <input type="tel" name="phone_number" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        
+        <div id="overlay"></div>
         <!--Pop up Modal Form-->
-    </div>
+    
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
