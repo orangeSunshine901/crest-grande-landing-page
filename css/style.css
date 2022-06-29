@@ -375,6 +375,7 @@ header{
     }
 
     .mobile-cta{
+        position: relative;
         border: none;
         background-color: transparent;
         color: var(--miami-pink);
@@ -382,7 +383,7 @@ header{
         cursor: pointer;
         float: left;
         font-weight: 400;
-        margin-left: -1%;
+        right:2%;
     }
 
     .mobile-cta::before{
@@ -1035,6 +1036,7 @@ header{
 
     .mobile-cta2{
         display: block;
+        position: relative;
         border: none;
         background-color: transparent;
         color: var(--miami-pink);
@@ -1042,7 +1044,7 @@ header{
         cursor: pointer;
         float: left;
         font-weight: 400;
-        margin-left: -1%;
+        right:2%;
     }
 
     .mobile-cta2::before{
