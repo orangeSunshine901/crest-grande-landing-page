@@ -1127,12 +1127,10 @@ input[type=tel]:focus{
 /** Mobile**/
 @media (min-width: 360px) and (max-width: 450px){
     .contact-us-section{
-        display: flex;
-        flex-direction: column;
+        display: block;
         padding-inline: 1.2rem;
         padding-block: 1.5rem;
         background-color: var(--spades-black);
-        align-items: flex-start;
     }
 
     .contact-us-section div{
@@ -1176,6 +1174,11 @@ input[type=tel]:focus{
     input[type=email],
     input[type=tel]:focus{
         outline: none;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel]{
         -webkit-appearance: none;
         -webkit-border-radius: 0;
     }
