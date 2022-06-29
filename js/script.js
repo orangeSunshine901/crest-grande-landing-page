@@ -46,16 +46,3 @@ window.addEventListener("scroll", () => {
         popUpButton.classList.remove("hide")
     }
 })
-
-// const observer = new IntersectionObserver(entries => {
-//         entries.forEach(entry => {
-//             entry.target.classList.toggle("hide", entry.isIntersecting)
-//         })
-//     }, {
-//         rootMargin: "-500px",
-//     }
-// )
-
-// observer.observe(popUpButton)
-
-let 
