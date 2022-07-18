@@ -220,7 +220,7 @@
                 <br>So we’re always available.</p>
             </div>
             <div>
-              <form>
+              <form action="connect.php" method="POST">
                 <div>
                     <div>
                         <label for="fullname"></label>
@@ -232,7 +232,7 @@
                     </div>
                     <div>
                         <label for="phone"></label>
-                        <input type="tel" name="phone_number" id="phone" placeholder="Phone Number" required>
+                        <input type="tel" name="phone_number" id="phone" placeholder="+971 50 1234895" maxlength="14" required>
                     </div>
                     <button type="submit">Submit</button>
                 </div>
@@ -256,8 +256,8 @@
               So we’re always available.</p>
             </div>
             <div class="modal-body">
-              <form>
-                <div class="popup-form-fields">
+              <form action="connect.php" method="POST">
+                <div class="popup-form-fields" >
                     <div>
                         <label for="fullname"></label>
                         <input type="text" name="full_name" id="fullname" placeholder="Full Name" required>
@@ -279,6 +279,6 @@
         <div id="overlay"></div>
         <!--Pop up Modal Form-->
     
-    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/script.js" defer></script>
 </body>
 </html>
