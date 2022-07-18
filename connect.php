@@ -7,7 +7,7 @@
     // $phoneNo = $_POST['phone_number'];
     // $serverName = "localhost";
     // $userName = "spadesre_mrkt";
-    // $pass = "Q@nat898";
+    // $pass = "";
     // $dbname = "spadesre_campaigns_data";
 
     // //Database Connection//
